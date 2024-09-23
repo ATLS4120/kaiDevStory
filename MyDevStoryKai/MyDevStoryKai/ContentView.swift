@@ -34,10 +34,10 @@ struct ContentView: View {
             VStack (){
                 Text("My Dev Story")
                     .font(.custom("AmericanTypewriter", size: 48).weight(.bold))
-                    
+                
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
-          
+                
                     .frame(width: 351, height: 0)
                     .offset(y: 0)
                 
@@ -61,146 +61,165 @@ struct ContentView: View {
                 
                 // Idea:
                 // Add more UI elements here as needed
-                NavigationLink(destination: chapterOne()) {
-                    Text(names[0])
-                        .frame(width: 300, height: 10)
-                        .font(.custom("AmericanTypewriter", size: 30))
-                        .padding()
-                        .background(Color(red: 0.92, green: 0.93, blue: 0.84))
-                        .foregroundColor(.black)
-                        .cornerRadius(10)
-//                        .offset(y: 150)
+                ScrollView([.vertical], showsIndicators: false) {
+                    NavigationLink(destination: FullStoryPage()) {
+                        Text("Full Story")
+                            .frame(width: 300, height: 80)
+                            .font(.custom("AmericanTypewriter", size: 30))
+                            .padding()
+                            .background(Color(red: 0.92, green: 0.93, blue: 0.84))
+                            .foregroundColor(.black)
+                            .cornerRadius(10)
+                        //                        .offset(y: 150)
+                    }
+                    Text ("or")
+                        .font(.custom("AmericanTypewriter", size: 20).weight(.bold))
+                    
+                        .multilineTextAlignment(.leading)
+                        .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
+                    
+                    NavigationLink(destination: chapterOne()) {
+                        Text(names[0])
+                            .frame(width: 300, height: 80)
+                            .font(.custom("AmericanTypewriter", size: 30))
+                            .padding()
+                            .background(Color(red: 0.92, green: 0.93, blue: 0.84))
+                            .foregroundColor(.black)
+                            .cornerRadius(10)
+                        //                        .offset(y: 150)
+                    }
+                    
+                    
+                    NavigationLink(destination: chapterTwo()) {
+                        Text(names[1])
+                            .frame(width: 300, height: 80)
+                            .font(.custom("AmericanTypewriter", size: 30))
+                            .padding()
+                            .background(Color(red: 0.92, green: 0.93, blue: 0.84))
+                            .foregroundColor(.black)
+                            .cornerRadius(10)
+                        //                        .offset(y: 200)
+                    }
+                    
+                    NavigationLink(destination: chapterThree()) {
+                        Text(names[2])
+                            .frame(width: 300, height: 80)
+                            .font(.custom("AmericanTypewriter", size: 30))
+                            .padding()
+                            .background(Color(red: 0.92, green: 0.93, blue: 0.84))
+                            .foregroundColor(.black)
+                            .cornerRadius(10)
+                        //                        .offset(y: 250)
+                    }
+                    
+                    NavigationLink(destination: chapterFour()) {
+                        Text(names[3])
+                            .frame(width: 300, height: 80)
+                            .font(.custom("AmericanTypewriter", size: 30))
+                            .padding()
+                            .background(Color(red: 0.92, green: 0.93, blue: 0.84))
+                            .foregroundColor(.black)
+                            .cornerRadius(10)
+                        //                        .offset(y: 300)
+                    }
+                    
+                    NavigationLink(destination: chapterFive()) {
+                        Text(names[4])
+                            .frame(width: 300, height: 80)
+                            .font(.custom("AmericanTypewriter", size: 30))
+                            .padding()
+                            .background(Color(red: 0.92, green: 0.93, blue: 0.84))
+                            .foregroundColor(.black)
+                            .cornerRadius(10)
+                        //                        .offset(y: 350)
+                    }
+                    
+                    NavigationLink(destination: chapterSix()) {
+                        Text(names[5])
+                            .frame(width: 300, height: 80)
+                            .font(.custom("AmericanTypewriter", size: 30))
+                            .padding()
+                            .background(Color(red: 0.92, green: 0.93, blue: 0.84))
+                            .foregroundColor(.black)
+                            .cornerRadius(10)
+                        //                        .offset(y: 400)
+                    }
+                    
+                    NavigationLink(destination: chapterSeven()) {
+                        Text(names[6])
+                            .frame(width: 300, height: 80)
+                            .font(.custom("AmericanTypewriter", size: 30))
+                            .padding()
+                            .background(Color(red: 0.92, green: 0.93, blue: 0.84))
+                            .foregroundColor(.black)
+                            .cornerRadius(10)
+                        //                        .offset(y: 450)
+                    }
+                    
+                    NavigationLink(destination: chapterEight()) {
+                        Text(names[7])
+                            .frame(width: 300, height: 80)
+                            .font(.custom("AmericanTypewriter", size: 30))
+                            .padding()
+                            .background(Color(red: 0.92, green: 0.93, blue: 0.84))
+                            .foregroundColor(.black)
+                            .cornerRadius(10)
+                        //                        .offset(y: 500)
+                    }
+                    
+                    NavigationLink(destination: chapterNine()) {
+                        Text(names[8])
+                            .frame(width: 300, height: 80)
+                            .font(.custom("AmericanTypewriter", size: 30))
+                            .padding()
+                            .background(Color(red: 0.92, green: 0.93, blue: 0.84))
+                            .foregroundColor(.black)
+                            .cornerRadius(10)
+                        //                        .offset(y: 550)
+                    }
+                    
+//                    NavigationLink(destination: ContentView()) {
+//                        Text(names[9])
+//                            .frame(width: 300, height: 80)
+//                            .font(.custom("AmericanTypewriter", size: 30))
+//                            .padding()
+//                            .background(Color(red: 0.92, green: 0.93, blue: 0.84))
+//                            .foregroundColor(.black)
+//                            .cornerRadius(10)
+//                        //                        .offset(y: 600)
+//                    }
+                    
+                    //
+                    //
+                    
+                    //            .contextMenu {
+                    //                Button("I", action: pageI)
+                    //                Button("II", action: pageII)
+                    //                Button("III", action: pageIII)
+                    //                Button("IV", action: pageIV)
+                    //                Button("V", action: pageV)
+                    //                Button("VI", action: pageVI)
+                    //                Button("VII", action: pageVII)
+                    //                Button("VIII", action: pageVIII)
+                    //                Button("IX", action: pageIX)
+                    //                Button("X", action: pageX)
+                    //            }
                 }
                 
                 
-                NavigationLink(destination: chapterTwo()) {
-                    Text(names[1])
-                        .frame(width: 300, height: 10)
-                        .font(.custom("AmericanTypewriter", size: 30))
-                        .padding()
-                        .background(Color(red: 0.92, green: 0.93, blue: 0.84))
-                        .foregroundColor(.black)
-                        .cornerRadius(10)
-//                        .offset(y: 200)
-                }
-                
-                NavigationLink(destination: chapterThree()) {
-                    Text(names[2])
-                        .frame(width: 300, height: 10)
-                        .font(.custom("AmericanTypewriter", size: 30))
-                        .padding()
-                        .background(Color(red: 0.92, green: 0.93, blue: 0.84))
-                        .foregroundColor(.black)
-                        .cornerRadius(10)
-//                        .offset(y: 250)
-                }
-                
-                NavigationLink(destination: chapterFour()) {
-                    Text(names[3])
-                        .frame(width: 300, height: 10)
-                        .font(.custom("AmericanTypewriter", size: 30))
-                        .padding()
-                        .background(Color(red: 0.92, green: 0.93, blue: 0.84))
-                        .foregroundColor(.black)
-                        .cornerRadius(10)
-//                        .offset(y: 300)
-                }
-                
-                NavigationLink(destination: chapterFive()) {
-                    Text(names[4])
-                        .frame(width: 300, height: 10)
-                        .font(.custom("AmericanTypewriter", size: 30))
-                        .padding()
-                        .background(Color(red: 0.92, green: 0.93, blue: 0.84))
-                        .foregroundColor(.black)
-                        .cornerRadius(10)
-//                        .offset(y: 350)
-                }
-                
-                NavigationLink(destination: chapterSix()) {
-                    Text(names[5])
-                        .frame(width: 300, height: 10)
-                        .font(.custom("AmericanTypewriter", size: 30))
-                        .padding()
-                        .background(Color(red: 0.92, green: 0.93, blue: 0.84))
-                        .foregroundColor(.black)
-                        .cornerRadius(10)
-//                        .offset(y: 400)
-                }
-                
-                NavigationLink(destination: chapterSeven()) {
-                    Text(names[6])
-                        .frame(width: 300, height: 10)
-                        .font(.custom("AmericanTypewriter", size: 30))
-                        .padding()
-                        .background(Color(red: 0.92, green: 0.93, blue: 0.84))
-                        .foregroundColor(.black)
-                        .cornerRadius(10)
-//                        .offset(y: 450)
-                }
-                
-                NavigationLink(destination: chapterEight()) {
-                    Text(names[7])
-                        .frame(width: 300, height: 10)
-                        .font(.custom("AmericanTypewriter", size: 30))
-                        .padding()
-                        .background(Color(red: 0.92, green: 0.93, blue: 0.84))
-                        .foregroundColor(.black)
-                        .cornerRadius(10)
-//                        .offset(y: 500)
-                }
-                
-                NavigationLink(destination: chapterNine()) {
-                    Text(names[8])
-                        .frame(width: 300, height: 10)
-                        .font(.custom("AmericanTypewriter", size: 30))
-                        .padding()
-                        .background(Color(red: 0.92, green: 0.93, blue: 0.84))
-                        .foregroundColor(.black)
-                        .cornerRadius(10)
-//                        .offset(y: 550)
-                }
-                
-                NavigationLink(destination: ContentView()) {
-                    Text(names[9])
-                        .frame(width: 300, height: 10)
-                        .font(.custom("AmericanTypewriter", size: 30))
-                        .padding()
-                        .background(Color(red: 0.92, green: 0.93, blue: 0.84))
-                        .foregroundColor(.black)
-                        .cornerRadius(10)
-//                        .offset(y: 600)
-                }
-                
+                //        VStack {
+                //            Text("My Dev Story\n\nBy Kai Franks")
+                //            .font(Font.custom("AmericanTypewriter", size: 48))
+                //            .multilineTextAlignment(.center)
+                //            .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
                 //
-                //
-                
-                //            .contextMenu {
-                //                Button("I", action: pageI)
-                //                Button("II", action: pageII)
-                //                Button("III", action: pageIII)
-                //                Button("IV", action: pageIV)
-                //                Button("V", action: pageV)
-                //                Button("VI", action: pageVI)
-                //                Button("VII", action: pageVII)
-                //                Button("VIII", action: pageVIII)
-                //                Button("IX", action: pageIX)
-                //                Button("X", action: pageX)
-                //            }
+                //            .frame(width: 351, height: 154, alignment: .top)
+                //        }
             }
+                .padding()
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(Color.black)
             
-            
-            //        VStack {
-            //            Text("My Dev Story\n\nBy Kai Franks")
-            //            .font(Font.custom("AmericanTypewriter", size: 48))
-            //            .multilineTextAlignment(.center)
-            //            .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
-            //
-            //            .frame(width: 351, height: 154, alignment: .top)
-            //        }
-            .padding()
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color.black)
         }
     }
 }
