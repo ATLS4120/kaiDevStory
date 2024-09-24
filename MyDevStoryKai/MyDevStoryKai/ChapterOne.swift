@@ -1,5 +1,5 @@
 //
-//  chapterOne.swift
+//  ChapterOne.swift
 //  My Dev Story
 //
 //  Created by Kai Franks on 9/16/24.
@@ -8,7 +8,7 @@
 //import Foundation
 import SwiftUI
 
-struct chapterOne: View {
+struct ChapterOne: View {
     var body: some View {
         VStack {
             Text("Print ChapterI")
@@ -22,7 +22,7 @@ struct chapterOne: View {
             
                 .underline()
                 .padding(.bottom, 5)
-            Text(Constants.chapterOne)
+            Text(Constants.ChapterOne)
                 .font(.custom("AmericanTypewriter", size: 20).weight(.bold))
                 
                 .multilineTextAlignment(.leading)
@@ -41,7 +41,7 @@ struct chapterOne: View {
         }
 //        .background(Color.yellow.opacity(0.1))
 //        .cornerRadius(10)
-        .navigationTitle("chapterOne")
+        .navigationTitle("ChapterOne")
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.black)
@@ -50,8 +50,8 @@ struct chapterOne: View {
 }
 
 
-struct chapterOne_Previews: PreviewProvider {
+struct ChapterOne_Previews: PreviewProvider {
     static var previews: some View {
-        chapterOne()
+        ChapterOne()
     }
 }

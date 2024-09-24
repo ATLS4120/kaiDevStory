@@ -22,33 +22,35 @@ struct FullStoryPage: View {
         //
         //        }
         TabView {
-            HStack (){
-                Text("red")
-                    .frame(width: 300, height: 80)
-                    .font(.custom("AmericanTypewriter", size: 30))
-                    .padding()
-                    .background(Color(red: 0.92, green: 0.93, blue: 0.84))
-                    .foregroundColor(.black)
-                    .cornerRadius(10)
-            }
+//            HStack (){
+//                Text("red")
+//                    .frame(width: 300, height: 80)
+//                    .font(.custom("AmericanTypewriter", size: 30))
+//                    .padding()
+//                    .background(Color(red: 0.92, green: 0.93, blue: 0.84))
+//                    .foregroundColor(.black)
+//                    .cornerRadius(10)
+//            }
+//                .tabItem {
+//                    Text("I")
+//        
+//                    Image(systemName: "star")
+//                        //                chapterOne()
+//                    }
+            ChapterOne()
                 .tabItem {
                     Text("I")
-        
                     Image(systemName: "star")
                         //                chapterOne()
                     }
-            chapterOne()
-                .tabItem {
-                    Text("I")
-                    Image(systemName: "star")
-                        //                chapterOne()
-                    }
-            chapterTwo()
+            ChapterTwo()
                 .tabItem {
                     Text("II")
                     Image(systemName: "star")
-                        //                chapterOne()
-                    }
+                    //                chapterOne()
+                }
+            
+                //
                 //            //            Tab
                 //            //            //        .background(Color.yellow.opacity(0.1))
                 //            //            //        .cornerRadius(10)

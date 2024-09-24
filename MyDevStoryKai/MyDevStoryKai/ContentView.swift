@@ -15,21 +15,32 @@ import SwiftUI
 
 
 enum Constants {
-    static let chapterOne = "chapterI = I believe I started my programming journey in middle school when we worked on Lego Mindstorms for our engineering class. I was also in a robotics club that were on Lego Mindstorms but I don’t remember anything about Mindstorms."
-    static let chapterTwo = "chapterII = After middle school, I went to a high school that provided a whole engineering curriculum that including a little programming. This is when I was exposed to Arduino's and some CNC programs. A lot of physical computing."
-    static let chapterThree = "chapterIII = Once I graduated high school I went to Front Range Community College. At Front Range I took a Intro to Python class where I learned a lot about Object Oriented Programming and the basics of Python."
-    static let chapterFour = "chapterIV = After Front Range, I started my first year at CU Boulder in the Creative Tech and Design program. Comp Foundations was the intro to programming class in ATLS. I loved this class and finished with programming a two player game using Pygame."
-    static let chapterFive = "<p>The next semester I took Data Structures and Web. This is where I was introduced to Html, Css, and Javascript. Web design became my favorite class as it combined coding and design. I coded my own website and became interested in the UI/UX part of Web design.</p>"
-    static let chapterSix = "<p>Over the summer of 2023 I got an internship with Annie Margaret working on an Values based application that would allow people to journal and align how they feel to a value. I was apart of the UI/UX team and mainly worked on interviews and documenting interaction with the Figma Prototype.<p>"
-    static let chapterSeven = "</Text>Later on in the same internship, I worked on a side project using React Native. This was an app that would allow others to set up survey times and allow the user to log that the test was complete for the day. Wasn’t able to heavily get into this but I did work with styling the app.</Text>"
-    static let chapterEight = "Serial.Print(“I became very familiar with Arduino as my next coding language due to a class called Object. For this class my end goal was to make a device that would communicate to cars behind you when they are tailgating you or when you are merging. This was done using neopixels and radio transmitters in order to communicate.”)"
-    static let chapterNine = "20 print “Tiny Games was the next coding adventure I took within CTD. Tiny Games exposed to a bunch of different languages including BASIC, Pico 8, and several others that I cannot find the names of. This class gave the challenge to code small games in a small amount of time with new languages for each game.”"
+    static let ChapterOne = "chapterI = I believe I started my programming journey in middle school when we worked on Lego Mindstorms for our engineering class. I was also in a robotics club that were on Lego Mindstorms but I don’t remember anything about Mindstorms."
+    static let ChapterTwo = "chapterII = After middle school, I went to a high school that provided a whole engineering curriculum that including a little programming. This is when I was exposed to Arduino's and some CNC programs. A lot of physical computing."
+    static let ChapterThree = "chapterIII = Once I graduated high school I went to Front Range Community College. At Front Range I took a Intro to Python class where I learned a lot about Object Oriented Programming and the basics of Python."
+    static let ChapterFour = "chapterIV = After Front Range, I started my first year at CU Boulder in the Creative Tech and Design program. Comp Foundations was the intro to programming class in ATLS. I loved this class and finished with programming a two player game using Pygame."
+    static let ChapterFive = "<p>The next semester I took Data Structures and Web. This is where I was introduced to Html, Css, and Javascript. Web design became my favorite class as it combined coding and design. I coded my own website and became interested in the UI/UX part of Web design.</p>"
+    static let ChapterSix = "<p>Over the summer of 2023 I got an internship with Annie Margaret working on an Values based application that would allow people to journal and align how they feel to a value. I was apart of the UI/UX team and mainly worked on interviews and documenting interaction with the Figma Prototype.<p>"
+    static let ChapterSeven = "</Text>Later on in the same internship, I worked on a side project using React Native. This was an app that would allow others to set up survey times and allow the user to log that the test was complete for the day. Wasn’t able to heavily get into this but I did work with styling the app.</Text>"
+    static let ChapterEight = "Serial.Print(“I became very familiar with Arduino as my next coding language due to a class called Object. For this class my end goal was to make a device that would communicate to cars behind you when they are tailgating you or when you are merging. This was done using neopixels and radio transmitters in order to communicate.”)"
+    static let ChapterNine = "20 print “Tiny Games was the next coding adventure I took within CTD. Tiny Games exposed to a bunch of different languages including BASIC, Pico 8, and several others that I cannot find the names of. This class gave the challenge to code small games in a small amount of time with new languages for each game.”"
 }
-
+//NavigationLink(destination: ChapterOne()) {
+//    Text(names[0])
+//        .frame(width: 300, height: 80)
+//        .font(.custom("AmericanTypewriter", size: 30))
+//        .padding()
+//        .background(Color(red: 0.92, green: 0.93, blue: 0.84))
+//        .foregroundColor(.black)
+//        .cornerRadius(10)
+//    //                        .offset(y: 150)
+//}
 struct ContentViewModel {
     let foregroundColor: Color
     let font: Font
     let fontTitle: Font
+    let background: Color
+    let cornerRadius: Int
 }
 
 struct ContentView: View {
@@ -100,7 +111,7 @@ struct ContentView: View {
                         .multilineTextAlignment(.leading)
                         .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
                     
-                    NavigationLink(destination: chapterOne()) {
+                    NavigationLink(destination: ChapterOne()) {
                         Text(names[0])
                             .frame(width: 300, height: 80)
                             .font(.custom("AmericanTypewriter", size: 30))
@@ -112,7 +123,7 @@ struct ContentView: View {
                     }
                     
                     
-                    NavigationLink(destination: chapterTwo()) {
+                    NavigationLink(destination: ChapterTwo()) {
                         Text(names[1])
                             .frame(width: 300, height: 80)
                             .font(.custom("AmericanTypewriter", size: 30))
@@ -123,7 +134,7 @@ struct ContentView: View {
                         //                        .offset(y: 200)
                     }
                     
-                    NavigationLink(destination: chapterThree()) {
+                    NavigationLink(destination: ChapterThree()) {
                         Text(names[2])
                             .frame(width: 300, height: 80)
                             .font(.custom("AmericanTypewriter", size: 30))
@@ -134,7 +145,7 @@ struct ContentView: View {
                         //                        .offset(y: 250)
                     }
                     
-                    NavigationLink(destination: chapterFour()) {
+                    NavigationLink(destination: ChapterFour()) {
                         Text(names[3])
                             .frame(width: 300, height: 80)
                             .font(.custom("AmericanTypewriter", size: 30))
@@ -145,7 +156,7 @@ struct ContentView: View {
                         //                        .offset(y: 300)
                     }
                     
-                    NavigationLink(destination: chapterFive()) {
+                    NavigationLink(destination: ChapterFive()) {
                         Text(names[4])
                             .frame(width: 300, height: 80)
                             .font(.custom("AmericanTypewriter", size: 30))
@@ -156,7 +167,7 @@ struct ContentView: View {
                         //                        .offset(y: 350)
                     }
                     
-                    NavigationLink(destination: chapterSix()) {
+                    NavigationLink(destination: ChapterSix()) {
                         Text(names[5])
                             .frame(width: 300, height: 80)
                             .font(.custom("AmericanTypewriter", size: 30))
@@ -167,7 +178,7 @@ struct ContentView: View {
                         //                        .offset(y: 400)
                     }
                     
-                    NavigationLink(destination: chapterSeven()) {
+                    NavigationLink(destination: ChapterSeven()) {
                         Text(names[6])
                             .frame(width: 300, height: 80)
                             .font(.custom("AmericanTypewriter", size: 30))
@@ -178,7 +189,7 @@ struct ContentView: View {
                         //                        .offset(y: 450)
                     }
                     
-                    NavigationLink(destination: chapterEight()) {
+                    NavigationLink(destination: ChapterEight()) {
                         Text(names[7])
                             .frame(width: 300, height: 80)
                             .font(.custom("AmericanTypewriter", size: 30))
@@ -189,7 +200,7 @@ struct ContentView: View {
                         //                        .offset(y: 500)
                     }
                     
-                    NavigationLink(destination: chapterNine()) {
+                    NavigationLink(destination: ChapterNine()) {
                         Text(names[8])
                             .frame(width: 300, height: 80)
                             .font(.custom("AmericanTypewriter", size: 30))
@@ -255,7 +266,20 @@ struct ContentView: View {
             
         }
     }
+    func chapterView(chapter: String) -> some View {
+        Text(chapter)
+            .frame(width: 300, height: 80)
+            .font(.custom("AmericanTypewriter", size: 30))
+            .padding()
+            .background(Color(red: 0.92, green: 0.93, blue: 0.84))
+            .foregroundColor(.black)
+            .cornerRadius(10)
+        
+    }
 }
+
+    
+
 #Preview {
     ContentView()
     
@@ -268,7 +292,7 @@ struct ContentView: View {
 //                .font(.custom("AmericanTypewriter", size: 48))
 //                .underline()
 //                .padding(.bottom, 5)
-//            Text(Constants.chapterOne)
+//            Text(Constants.ChapterOne)
 //                .padding()
 //                .multilineTextAlignment(.leading)
 //        }

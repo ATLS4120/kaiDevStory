@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D428D512CA381850057EC99 /* ContentViewTry2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D428D502CA381850057EC99 /* ContentViewTry2.swift */; };
 		7D7AF9A42CA2072400C81BC6 /* FullStoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7AF9A32CA2072400C81BC6 /* FullStoryPage.swift */; };
 		7DB7056E2CA235420090E1CD /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB7056D2CA235420090E1CD /* Settings.swift */; };
 		7DB705702CA24D650090E1CD /* Font+AmericanTypewriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB7056F2CA24D650090E1CD /* Font+AmericanTypewriter.swift */; };
@@ -14,18 +15,19 @@
 		7DD7BEA42CA116A200C9DA71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BEA32CA116A200C9DA71 /* ContentView.swift */; };
 		7DD7BEA62CA116A400C9DA71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DD7BEA52CA116A400C9DA71 /* Assets.xcassets */; };
 		7DD7BEA92CA116A400C9DA71 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DD7BEA82CA116A400C9DA71 /* Preview Assets.xcassets */; };
-		7DD7BEB02CA1174400C9DA71 /* chapterOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BEAF2CA1174400C9DA71 /* chapterOne.swift */; };
-		7DD7BEB22CA1175700C9DA71 /* chapterTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BEB12CA1175700C9DA71 /* chapterTwo.swift */; };
-		7DD7BEB42CA1176600C9DA71 /* chapterThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BEB32CA1176600C9DA71 /* chapterThree.swift */; };
-		7DD7BEB62CA1177100C9DA71 /* chapterFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BEB52CA1177100C9DA71 /* chapterFour.swift */; };
-		7DD7BEB82CA1177D00C9DA71 /* chapterFive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BEB72CA1177D00C9DA71 /* chapterFive.swift */; };
-		7DD7BEBA2CA1178C00C9DA71 /* chapterSix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BEB92CA1178C00C9DA71 /* chapterSix.swift */; };
-		7DD7BEBC2CA1179C00C9DA71 /* chapterSeven.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BEBB2CA1179C00C9DA71 /* chapterSeven.swift */; };
-		7DD7BEBE2CA117AB00C9DA71 /* chapterEight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BEBD2CA117AB00C9DA71 /* chapterEight.swift */; };
-		7DD7BEC02CA117BA00C9DA71 /* chapterNine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BEBF2CA117BA00C9DA71 /* chapterNine.swift */; };
+		7DD7BEB02CA1174400C9DA71 /* ChapterOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BEAF2CA1174400C9DA71 /* ChapterOne.swift */; };
+		7DD7BEB22CA1175700C9DA71 /* ChapterTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BEB12CA1175700C9DA71 /* ChapterTwo.swift */; };
+		7DD7BEB42CA1176600C9DA71 /* ChapterThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BEB32CA1176600C9DA71 /* ChapterThree.swift */; };
+		7DD7BEB62CA1177100C9DA71 /* ChapterFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BEB52CA1177100C9DA71 /* ChapterFour.swift */; };
+		7DD7BEB82CA1177D00C9DA71 /* ChapterFive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BEB72CA1177D00C9DA71 /* ChapterFive.swift */; };
+		7DD7BEBA2CA1178C00C9DA71 /* ChapterSix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BEB92CA1178C00C9DA71 /* ChapterSix.swift */; };
+		7DD7BEBC2CA1179C00C9DA71 /* ChapterSeven.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BEBB2CA1179C00C9DA71 /* ChapterSeven.swift */; };
+		7DD7BEBE2CA117AB00C9DA71 /* ChapterEight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BEBD2CA117AB00C9DA71 /* ChapterEight.swift */; };
+		7DD7BEC02CA117BA00C9DA71 /* ChapterNine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BEBF2CA117BA00C9DA71 /* ChapterNine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D428D502CA381850057EC99 /* ContentViewTry2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewTry2.swift; sourceTree = "<group>"; };
 		7D7AF9A32CA2072400C81BC6 /* FullStoryPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullStoryPage.swift; sourceTree = "<group>"; };
 		7DB7056D2CA235420090E1CD /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		7DB7056F2CA24D650090E1CD /* Font+AmericanTypewriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+AmericanTypewriter.swift"; sourceTree = "<group>"; };
@@ -34,15 +36,15 @@
 		7DD7BEA32CA116A200C9DA71 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7DD7BEA52CA116A400C9DA71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DD7BEA82CA116A400C9DA71 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7DD7BEAF2CA1174400C9DA71 /* chapterOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chapterOne.swift; sourceTree = "<group>"; };
-		7DD7BEB12CA1175700C9DA71 /* chapterTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chapterTwo.swift; sourceTree = "<group>"; };
-		7DD7BEB32CA1176600C9DA71 /* chapterThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chapterThree.swift; sourceTree = "<group>"; };
-		7DD7BEB52CA1177100C9DA71 /* chapterFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chapterFour.swift; sourceTree = "<group>"; };
-		7DD7BEB72CA1177D00C9DA71 /* chapterFive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chapterFive.swift; sourceTree = "<group>"; };
-		7DD7BEB92CA1178C00C9DA71 /* chapterSix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chapterSix.swift; sourceTree = "<group>"; };
-		7DD7BEBB2CA1179C00C9DA71 /* chapterSeven.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chapterSeven.swift; sourceTree = "<group>"; };
-		7DD7BEBD2CA117AB00C9DA71 /* chapterEight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chapterEight.swift; sourceTree = "<group>"; };
-		7DD7BEBF2CA117BA00C9DA71 /* chapterNine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chapterNine.swift; sourceTree = "<group>"; };
+		7DD7BEAF2CA1174400C9DA71 /* ChapterOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterOne.swift; sourceTree = "<group>"; };
+		7DD7BEB12CA1175700C9DA71 /* ChapterTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterTwo.swift; sourceTree = "<group>"; };
+		7DD7BEB32CA1176600C9DA71 /* ChapterThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterThree.swift; sourceTree = "<group>"; };
+		7DD7BEB52CA1177100C9DA71 /* ChapterFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterFour.swift; sourceTree = "<group>"; };
+		7DD7BEB72CA1177D00C9DA71 /* ChapterFive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterFive.swift; sourceTree = "<group>"; };
+		7DD7BEB92CA1178C00C9DA71 /* ChapterSix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterSix.swift; sourceTree = "<group>"; };
+		7DD7BEBB2CA1179C00C9DA71 /* ChapterSeven.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterSeven.swift; sourceTree = "<group>"; };
+		7DD7BEBD2CA117AB00C9DA71 /* ChapterEight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterEight.swift; sourceTree = "<group>"; };
+		7DD7BEBF2CA117BA00C9DA71 /* ChapterNine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterNine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,18 +79,19 @@
 			children = (
 				7DD7BEA12CA116A200C9DA71 /* MyDevStoryKaiApp.swift */,
 				7DD7BEA32CA116A200C9DA71 /* ContentView.swift */,
+				7D428D502CA381850057EC99 /* ContentViewTry2.swift */,
 				7DB7056F2CA24D650090E1CD /* Font+AmericanTypewriter.swift */,
 				7DB7056D2CA235420090E1CD /* Settings.swift */,
 				7D7AF9A32CA2072400C81BC6 /* FullStoryPage.swift */,
-				7DD7BEAF2CA1174400C9DA71 /* chapterOne.swift */,
-				7DD7BEB12CA1175700C9DA71 /* chapterTwo.swift */,
-				7DD7BEB32CA1176600C9DA71 /* chapterThree.swift */,
-				7DD7BEB52CA1177100C9DA71 /* chapterFour.swift */,
-				7DD7BEB72CA1177D00C9DA71 /* chapterFive.swift */,
-				7DD7BEB92CA1178C00C9DA71 /* chapterSix.swift */,
-				7DD7BEBB2CA1179C00C9DA71 /* chapterSeven.swift */,
-				7DD7BEBD2CA117AB00C9DA71 /* chapterEight.swift */,
-				7DD7BEBF2CA117BA00C9DA71 /* chapterNine.swift */,
+				7DD7BEAF2CA1174400C9DA71 /* ChapterOne.swift */,
+				7DD7BEB12CA1175700C9DA71 /* ChapterTwo.swift */,
+				7DD7BEB32CA1176600C9DA71 /* ChapterThree.swift */,
+				7DD7BEB52CA1177100C9DA71 /* ChapterFour.swift */,
+				7DD7BEB72CA1177D00C9DA71 /* ChapterFive.swift */,
+				7DD7BEB92CA1178C00C9DA71 /* ChapterSix.swift */,
+				7DD7BEBB2CA1179C00C9DA71 /* ChapterSeven.swift */,
+				7DD7BEBD2CA117AB00C9DA71 /* ChapterEight.swift */,
+				7DD7BEBF2CA117BA00C9DA71 /* ChapterNine.swift */,
 				7DD7BEA52CA116A400C9DA71 /* Assets.xcassets */,
 				7DD7BEA72CA116A400C9DA71 /* Preview Content */,
 			);
@@ -173,18 +176,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DD7BEBC2CA1179C00C9DA71 /* chapterSeven.swift in Sources */,
-				7DD7BEB22CA1175700C9DA71 /* chapterTwo.swift in Sources */,
+				7DD7BEBC2CA1179C00C9DA71 /* ChapterSeven.swift in Sources */,
+				7DD7BEB22CA1175700C9DA71 /* ChapterTwo.swift in Sources */,
 				7DB7056E2CA235420090E1CD /* Settings.swift in Sources */,
 				7DB705702CA24D650090E1CD /* Font+AmericanTypewriter.swift in Sources */,
-				7DD7BEB62CA1177100C9DA71 /* chapterFour.swift in Sources */,
-				7DD7BEB82CA1177D00C9DA71 /* chapterFive.swift in Sources */,
+				7DD7BEB62CA1177100C9DA71 /* ChapterFour.swift in Sources */,
+				7DD7BEB82CA1177D00C9DA71 /* ChapterFive.swift in Sources */,
 				7DD7BEA42CA116A200C9DA71 /* ContentView.swift in Sources */,
-				7DD7BEBE2CA117AB00C9DA71 /* chapterEight.swift in Sources */,
-				7DD7BEB42CA1176600C9DA71 /* chapterThree.swift in Sources */,
-				7DD7BEB02CA1174400C9DA71 /* chapterOne.swift in Sources */,
-				7DD7BEC02CA117BA00C9DA71 /* chapterNine.swift in Sources */,
-				7DD7BEBA2CA1178C00C9DA71 /* chapterSix.swift in Sources */,
+				7DD7BEBE2CA117AB00C9DA71 /* ChapterEight.swift in Sources */,
+				7DD7BEB42CA1176600C9DA71 /* ChapterThree.swift in Sources */,
+				7DD7BEB02CA1174400C9DA71 /* ChapterOne.swift in Sources */,
+				7DD7BEC02CA117BA00C9DA71 /* ChapterNine.swift in Sources */,
+				7D428D512CA381850057EC99 /* ContentViewTry2.swift in Sources */,
+				7DD7BEBA2CA1178C00C9DA71 /* ChapterSix.swift in Sources */,
 				7DD7BEA22CA116A200C9DA71 /* MyDevStoryKaiApp.swift in Sources */,
 				7D7AF9A42CA2072400C81BC6 /* FullStoryPage.swift in Sources */,
 			);

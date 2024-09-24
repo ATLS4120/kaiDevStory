@@ -8,11 +8,11 @@
 //import Foundation
 import SwiftUI
 
-struct chapterFour: View {
+struct ChapterEight: View {
     var body: some View {
         VStack {
-            Text("Print ChapterIV")
-                .font(.custom("AmericanTypewriter", size: 43).weight(.bold))
+            Text("Print ChapterVIII")
+                .font(.custom("AmericanTypewriter", size: 38).weight(.bold))
                 
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
@@ -22,7 +22,7 @@ struct chapterFour: View {
             
                 .underline()
                 .padding(.bottom, 5)
-            Text(Constants.chapterFour)
+            Text(Constants.ChapterEight)
                 .font(.custom("AmericanTypewriter", size: 20).weight(.bold))
                 
                 .multilineTextAlignment(.leading)
@@ -39,9 +39,10 @@ struct chapterFour: View {
 
             }
         }
+
 //        .background(Color.yellow.opacity(0.1))
 //        .cornerRadius(10)
-        .navigationTitle("chapterFour")
+        .navigationTitle("ChapterEight")
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.black)
@@ -50,8 +51,9 @@ struct chapterFour: View {
 }
 
 
-struct chapterFour_Previews: PreviewProvider {
+struct ChapterEight_Previews: PreviewProvider {
     static var previews: some View {
-        chapterFour()
+        ChapterEight()
     }
 }
+
