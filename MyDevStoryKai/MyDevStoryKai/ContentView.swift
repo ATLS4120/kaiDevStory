@@ -13,6 +13,7 @@ import SwiftUI
 //        .fill(Color.blue)
 //}
 
+
 enum Constants {
     static let chapterOne = "chapterI = I believe I started my programming journey in middle school when we worked on Lego Mindstorms for our engineering class. I was also in a robotics club that were on Lego Mindstorms but I don’t remember anything about Mindstorms."
     static let chapterTwo = "chapterII = After middle school, I went to a high school that provided a whole engineering curriculum that including a little programming. This is when I was exposed to Arduino's and some CNC programs. A lot of physical computing."
@@ -25,9 +26,30 @@ enum Constants {
     static let chapterNine = "20 print “Tiny Games was the next coding adventure I took within CTD. Tiny Games exposed to a bunch of different languages including BASIC, Pico 8, and several others that I cannot find the names of. This class gave the challenge to code small games in a small amount of time with new languages for each game.”"
 }
 
+struct ContentViewModel {
+    let foregroundColor: Color
+    let font: Font
+    let fontTitle: Font
+}
+
 struct ContentView: View {
     let names = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"]
-    //var globalCounter: Int = 0
+    let foregroundColor: Color
+    let font: Font
+    let fontTitle: Font
+    
+    init(foregroundColor: Color = Color(red: 0.92, green: 0.93, blue: 0.84), font: Font = .americanTypewriter()) {
+        self.foregroundColor = foregroundColor
+        self.font = font
+        self.fontTitle = .callout
+    }
+    
+    init(model: ContentViewModel) {
+        self.font = model.font
+        self.foregroundColor = model.foregroundColor
+        self.fontTitle = model.fontTitle
+    }
+    
     var body: some View {
         NavigationView {
             
@@ -65,7 +87,7 @@ struct ContentView: View {
                     NavigationLink(destination: FullStoryPage()) {
                         Text("Full Story")
                             .frame(width: 300, height: 80)
-                            .font(.custom("AmericanTypewriter", size: 30))
+                            .font(font)
                             .padding()
                             .background(Color(red: 0.92, green: 0.93, blue: 0.84))
                             .foregroundColor(.black)
@@ -178,6 +200,17 @@ struct ContentView: View {
                         //                        .offset(y: 550)
                     }
                     
+                    NavigationLink(destination: Settings()) {
+                        Text("settings")
+                            .frame(width: 300, height: 40)
+                            .font(.custom("AmericanTypewriter", size: 30))
+                            .padding()
+                            .background(Color(red: 0.92, green: 0.93, blue: 0.84))
+                            .foregroundColor(.black)
+                            .cornerRadius(10)
+                        //                        .offset(y: 550)
+                    }
+                    
 //                    NavigationLink(destination: ContentView()) {
 //                        Text(names[9])
 //                            .frame(width: 300, height: 80)
@@ -225,23 +258,24 @@ struct ContentView: View {
 }
 #Preview {
     ContentView()
+    
 }
 
-struct MyInfoPage1: View {
-    var body: some View {
-        VStack {
-            Text("Print ChapterI")
-                .font(.custom("AmericanTypewriter", size: 48))
-                .underline()
-                .padding(.bottom, 5)
-            Text(Constants.chapterOne)
-                .padding()
-                .multilineTextAlignment(.leading)
-        }
-//        .background(Color.yellow.opacity(0.1))
-//        .cornerRadius(10)
-    }
-}
+//struct MyInfoPage1: View {
+//    var body: some View {
+//        VStack {
+//            Text("Print ChapterI")
+//                .font(.custom("AmericanTypewriter", size: 48))
+//                .underline()
+//                .padding(.bottom, 5)
+//            Text(Constants.chapterOne)
+//                .padding()
+//                .multilineTextAlignment(.leading)
+//        }
+////        .background(Color.yellow.opacity(0.1))
+////        .cornerRadius(10)
+//    }
+//}
 
 
 //

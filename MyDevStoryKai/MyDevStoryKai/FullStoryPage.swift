@@ -37,8 +37,15 @@ struct FullStoryPage: View {
                     Image(systemName: "star")
                         //                chapterOne()
                     }
+            chapterOne()
                 .tabItem {
                     Text("I")
+                    Image(systemName: "star")
+                        //                chapterOne()
+                    }
+            chapterTwo()
+                .tabItem {
+                    Text("II")
                     Image(systemName: "star")
                         //                chapterOne()
                     }
@@ -50,7 +57,7 @@ struct FullStoryPage: View {
                     .padding()
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .background(Color.black)
-                    .tabViewStyle(.automatic)
+                    .tabViewStyle(.page)
             }
             
         }

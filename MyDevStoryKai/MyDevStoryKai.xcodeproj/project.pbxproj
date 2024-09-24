@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7D7AF9A42CA2072400C81BC6 /* FullStoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7AF9A32CA2072400C81BC6 /* FullStoryPage.swift */; };
+		7DB7056E2CA235420090E1CD /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB7056D2CA235420090E1CD /* Settings.swift */; };
+		7DB705702CA24D650090E1CD /* Font+AmericanTypewriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB7056F2CA24D650090E1CD /* Font+AmericanTypewriter.swift */; };
 		7DD7BEA22CA116A200C9DA71 /* MyDevStoryKaiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BEA12CA116A200C9DA71 /* MyDevStoryKaiApp.swift */; };
 		7DD7BEA42CA116A200C9DA71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BEA32CA116A200C9DA71 /* ContentView.swift */; };
 		7DD7BEA62CA116A400C9DA71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DD7BEA52CA116A400C9DA71 /* Assets.xcassets */; };
@@ -25,6 +27,8 @@
 
 /* Begin PBXFileReference section */
 		7D7AF9A32CA2072400C81BC6 /* FullStoryPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullStoryPage.swift; sourceTree = "<group>"; };
+		7DB7056D2CA235420090E1CD /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		7DB7056F2CA24D650090E1CD /* Font+AmericanTypewriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+AmericanTypewriter.swift"; sourceTree = "<group>"; };
 		7DD7BE9E2CA116A100C9DA71 /* MyDevStoryKai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDevStoryKai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DD7BEA12CA116A200C9DA71 /* MyDevStoryKaiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDevStoryKaiApp.swift; sourceTree = "<group>"; };
 		7DD7BEA32CA116A200C9DA71 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 			children = (
 				7DD7BEA12CA116A200C9DA71 /* MyDevStoryKaiApp.swift */,
 				7DD7BEA32CA116A200C9DA71 /* ContentView.swift */,
+				7DB7056F2CA24D650090E1CD /* Font+AmericanTypewriter.swift */,
+				7DB7056D2CA235420090E1CD /* Settings.swift */,
 				7D7AF9A32CA2072400C81BC6 /* FullStoryPage.swift */,
 				7DD7BEAF2CA1174400C9DA71 /* chapterOne.swift */,
 				7DD7BEB12CA1175700C9DA71 /* chapterTwo.swift */,
@@ -169,6 +175,8 @@
 			files = (
 				7DD7BEBC2CA1179C00C9DA71 /* chapterSeven.swift in Sources */,
 				7DD7BEB22CA1175700C9DA71 /* chapterTwo.swift in Sources */,
+				7DB7056E2CA235420090E1CD /* Settings.swift in Sources */,
+				7DB705702CA24D650090E1CD /* Font+AmericanTypewriter.swift in Sources */,
 				7DD7BEB62CA1177100C9DA71 /* chapterFour.swift in Sources */,
 				7DD7BEB82CA1177D00C9DA71 /* chapterFive.swift in Sources */,
 				7DD7BEA42CA116A200C9DA71 /* ContentView.swift in Sources */,
