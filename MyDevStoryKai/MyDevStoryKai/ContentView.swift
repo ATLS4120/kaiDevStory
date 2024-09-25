@@ -251,14 +251,6 @@ struct ContentView: View {
                 }
                 
                 
-                //        VStack {
-                //            Text("My Dev Story\n\nBy Kai Franks")
-                //            .font(Font.custom("AmericanTypewriter", size: 48))
-                //            .multilineTextAlignment(.center)
-                //            .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
-                //
-                //            .frame(width: 351, height: 154, alignment: .top)
-                //        }
             }
                 .padding()
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -285,33 +277,4 @@ struct ContentView: View {
     
 }
 
-//struct MyInfoPage1: View {
-//    var body: some View {
-//        VStack {
-//            Text("Print ChapterI")
-//                .font(.custom("AmericanTypewriter", size: 48))
-//                .underline()
-//                .padding(.bottom, 5)
-//            Text(Constants.ChapterOne)
-//                .padding()
-//                .multilineTextAlignment(.leading)
-//        }
-////        .background(Color.yellow.opacity(0.1))
-////        .cornerRadius(10)
-//    }
-//}
 
-
-//
-//for i in names {
-//    var offAmount = 50 * i+1
-//    var offset = 150 + offAmount
-//    Rectangle()
-//        .fill(Color(red: 0.92, green: 0.93, blue: 0.84))
-//        .frame(width: 300, height: 40)
-//        .offset(y: 150)
-//    Text(names[0])
-//        .foregroundStyle(.black)
-//        .offset(y: 150)
-//        .font(Font.custom("AmericanTypewriter", size: 36))
-//}

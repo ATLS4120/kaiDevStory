@@ -15,7 +15,7 @@ struct ChapterThree: View {
                 .font(.custom("AmericanTypewriter", size: 40).weight(.bold))
                 
                 .multilineTextAlignment(.center)
-                .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
+                .foregroundColor(.red)
             
                 .frame(width: 351, height: 0)
                 .offset(y: 0)
@@ -26,18 +26,30 @@ struct ChapterThree: View {
                 .font(.custom("AmericanTypewriter", size: 20).weight(.bold))
                 
                 .multilineTextAlignment(.leading)
-                .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
+                .foregroundColor(.red)
                 .offset(y: 20)
                 .padding(.bottom, 100)
             HStack {
                 Image(systemName: "star")
-                    .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
+                    .foregroundColor(.red)
                 Image(systemName: "star")
-                    .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
+                    .foregroundColor(.red)
                 Image(systemName: "star")
-                    .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
+                    .foregroundColor(.red)
 
             }
+            NavigationLink(destination: ChapterFour()) {
+                
+                Text("Next Chapter")
+                    .frame(width: 100, height: 100)
+                    .font(.custom("AmericanTypewriter", size: 20))
+                    .padding()
+                    .background(Circle().fill(Color.red))
+                    .foregroundColor(.black)
+                    .cornerRadius(10)
+               
+            }
+            .padding([.top],50)
         }
 //        .background(Color.yellow.opacity(0.1))
 //        .cornerRadius(10)

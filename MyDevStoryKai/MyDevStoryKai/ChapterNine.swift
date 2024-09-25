@@ -46,6 +46,20 @@ struct ChapterNine: View {
                             .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
                         
                     }
+                    NavigationLink(destination: ContentView()) {
+//                        ContentView()
+//                            .navigationBarBackButtonHidden(true)
+                        Text("Home")
+                            .frame(width: 150, height: 30)
+                            .font(.custom("AmericanTypewriter", size: 20))
+                            .padding()
+                            .background(Color(red: 0.92, green: 0.93, blue: 0.84))
+                            .foregroundColor(.black)
+                            .cornerRadius(10)
+                            .navigationBarBackButtonHidden(true)
+                       
+                    }
+                    .padding([.top],50)
                 }
         }
 //        .background(Color.yellow.opacity(0.1))

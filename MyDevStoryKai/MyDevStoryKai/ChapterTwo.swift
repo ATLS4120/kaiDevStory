@@ -10,43 +10,62 @@ import SwiftUI
 
 struct ChapterTwo: View {
     var body: some View {
-        VStack {
-            Text("Print ChapterII")
-                .font(.custom("AmericanTypewriter", size: 43).weight(.bold))
-                
-                .multilineTextAlignment(.center)
-                .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
+        ZStack {
+            LinearGradient(gradient: Gradient(colors: [.purple, .blue, .black]), startPoint: .top, endPoint: .bottom)
             
-                .frame(width: 351, height: 0)
-                .offset(y: 0)
-            
-                .underline()
-                .padding(.bottom, 5)
-            Text(Constants.ChapterTwo)
-                .font(.custom("AmericanTypewriter", size: 20).weight(.bold))
+            VStack {
+                Text("Print ChapterII")
+                    .font(.custom("AmericanTypewriter", size: 43).weight(.bold))
                 
-                .multilineTextAlignment(.leading)
-                .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
-                .offset(y: 20)
-                .padding(.bottom, 100)
-            HStack {
-                Image(systemName: "star")
-                    .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
-                Image(systemName: "star")
-                    .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
-                Image(systemName: "star")
-                    .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
-
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.white)
+                
+                    .frame(width: 351, height: 0)
+                    .offset(y: 0)
+                
+                    .underline()
+                    .padding(.bottom, 5)
+                Text(Constants.ChapterTwo)
+                    .font(.custom("AmericanTypewriter", size: 20).weight(.bold))
+                
+                    .multilineTextAlignment(.leading)
+                    .foregroundColor(.white)
+                    .offset(y: 20)
+                    .padding(.bottom, 100)
+                HStack {
+                    Image(systemName: "star")
+                        .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
+                    Image(systemName: "star")
+                        .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
+                    Image(systemName: "star")
+                        .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
+                    
+                }
+                NavigationLink(destination: ChapterThree()) {
+                    Text("Next Chapter")
+                        .frame(width: 150, height: 30)
+                        .font(.custom("AmericanTypewriter", size: 20))
+                        .padding()
+                        .background(.white)
+                        .foregroundColor(.black)
+                        .cornerRadius(10)
+                    
+                }
+                
+                .padding([.top],50)
             }
+            //        .background(Color.yellow.opacity(0.1))
+            //        .cornerRadius(10)
+            .navigationTitle("chapterThree")
+            .padding()
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            //        ZStack {
+            //            LinearGradient(gradient: Gradient(colors: [.white, .blue, .black]), startPoint: .top, endPoint: .bottom)
+            //        }
         }
-//        .background(Color.yellow.opacity(0.1))
-//        .cornerRadius(10)
-        .navigationTitle("chapterThree")
-        .padding()
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.black)
-    }
-    
+        .edgesIgnoringSafeArea(.all)
+        }
+        
 }
 
 

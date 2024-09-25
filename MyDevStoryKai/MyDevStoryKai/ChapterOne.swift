@@ -1,5 +1,5 @@
 //
-//  ChapterOne.swift
+//   .swift
 //  My Dev Story
 //
 //  Created by Kai Franks on 9/16/24.
@@ -37,6 +37,28 @@ struct ChapterOne: View {
                 Image(systemName: "star")
                     .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
 
+            }
+            HStack {
+//                Button(action: {destination: ChapterTwo()}, label: {
+//                    Text("Next Chapter")
+//                        .frame(width: 150, height: 30)
+//                        .font(.custom("AmericanTypewriter", size: 20))
+//                        .padding()
+//                        .background(Color(red: 0.92, green: 0.93, blue: 0.84))
+//                        .foregroundColor(.black)
+//                        .cornerRadius(10)
+//                })
+                NavigationLink(destination: ChapterTwo()) {
+                    Text("Next Chapter")
+                        .frame(width: 150, height: 30)
+                        .font(.custom("AmericanTypewriter", size: 20))
+                        .padding()
+                        .background(Color(red: 0.92, green: 0.93, blue: 0.84))
+                        .foregroundColor(.black)
+                        .cornerRadius(10)
+                   
+                }
+                .padding([.top],50)
             }
         }
 //        .background(Color.yellow.opacity(0.1))
