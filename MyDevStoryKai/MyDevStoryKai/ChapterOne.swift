@@ -10,6 +10,7 @@ import SwiftUI
 
 struct ChapterOne: View {
     var body: some View {
+        
         VStack {
             Text("Print ChapterI")
                 .font(.custom("AmericanTypewriter", size: 43).weight(.bold))
@@ -38,27 +39,29 @@ struct ChapterOne: View {
                     .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
 
             }
-            HStack {
-//                Button(action: {destination: ChapterTwo()}, label: {
-//                    Text("Next Chapter")
-//                        .frame(width: 150, height: 30)
-//                        .font(.custom("AmericanTypewriter", size: 20))
-//                        .padding()
-//                        .background(Color(red: 0.92, green: 0.93, blue: 0.84))
-//                        .foregroundColor(.black)
-//                        .cornerRadius(10)
-//                })
-                NavigationLink(destination: ChapterTwo()) {
-                    Text("Next Chapter")
-                        .frame(width: 150, height: 30)
-                        .font(.custom("AmericanTypewriter", size: 20))
-                        .padding()
-                        .background(Color(red: 0.92, green: 0.93, blue: 0.84))
-                        .foregroundColor(.black)
-                        .cornerRadius(10)
-                   
+            ScrollView([.vertical], showsIndicators: false) {
+                HStack {
+                    //                Button(action: {destination: ChapterTwo()}, label: {
+                    //                    Text("Next Chapter")
+                    //                        .frame(width: 150, height: 30)
+                    //                        .font(.custom("AmericanTypewriter", size: 20))
+                    //                        .padding()
+                    //                        .background(Color(red: 0.92, green: 0.93, blue: 0.84))
+                    //                        .foregroundColor(.black)
+                    //                        .cornerRadius(10)
+                    //                })
+                    NavigationLink(destination: ChapterTwo()) {
+                        Text("Next Chapter")
+                            .frame(width: 150, height: 30)
+                            .font(.custom("AmericanTypewriter", size: 20))
+                            .padding()
+                            .background(Color(red: 0.92, green: 0.93, blue: 0.84))
+                            .foregroundColor(.black)
+                            .cornerRadius(10)
+                        
+                    }
+                    .padding([.top],50)
                 }
-                .padding([.top],50)
             }
         }
 //        .background(Color.yellow.opacity(0.1))
