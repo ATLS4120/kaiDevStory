@@ -56,7 +56,7 @@ struct ChapterTwo: View {
             }
             //        .background(Color.yellow.opacity(0.1))
             //        .cornerRadius(10)
-            .navigationTitle("chapterThree")
+            .navigationTitle("chapterTwo")
             .padding()
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             //        ZStack {

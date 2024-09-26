@@ -15,14 +15,10 @@ struct ChapterThree: View {
                 
                 Text("Print ChapterIII")
                     .font(.custom("AmericanTypewriter", size: 40).weight(.bold))
-                
                     .multilineTextAlignment(.center)
                     .foregroundColor(.red)
-                
                     .frame(width: 351, height: 0)
                     .offset(y: 0)
-                
-                //                .underline()
                     .padding(.bottom, 30)
                 
             }
@@ -38,9 +34,6 @@ struct ChapterThree: View {
                     Image(systemName: "star")
                         .foregroundColor(.red)
                 }
-
-        
-
 
             }
             NavigationLink(destination: ChapterFour()) {
