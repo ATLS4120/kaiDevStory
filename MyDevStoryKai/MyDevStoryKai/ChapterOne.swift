@@ -29,7 +29,14 @@ struct ChapterOne: View {
                 .multilineTextAlignment(.leading)
                 .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
                 .offset(y: 20)
-                .padding(.bottom, 100)
+                .padding(.bottom, 20)
+            Image("LegoMindstorms")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 200)
+                    .cornerRadius(12)
+                    .shadow(radius: 5)
+                    .padding([.top, .bottom],20)
             HStack {
                 Image(systemName: "star")
                     .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
@@ -39,8 +46,8 @@ struct ChapterOne: View {
                     .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
 
             }
-            ScrollView([.vertical], showsIndicators: false) {
-                HStack {
+//            ScrollView([.vertical], showsIndicators: false) {
+                VStack {
                     //                Button(action: {destination: ChapterTwo()}, label: {
                     //                    Text("Next Chapter")
                     //                        .frame(width: 150, height: 30)
@@ -58,12 +65,30 @@ struct ChapterOne: View {
                             .background(Color(red: 0.92, green: 0.93, blue: 0.84))
                             .foregroundColor(.black)
                             .cornerRadius(10)
+                    }
+                    .padding([.bottom],10)
+                    HStack {
+                        Image(systemName: "star")
+                            .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
+                        Image(systemName: "star")
+                            .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
+                        Image(systemName: "star")
+                            .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
+
+                    }
+//                    Image("LegoMindstorms")
+//                            .resizable()
+//                            .scaledToFit()
+//                            .frame(height: 200)
+//                            .cornerRadius(12)
+//                            .shadow(radius: 5)
+//                            .padding([.top],20)
                         
                     }
-                    .padding([.top],50)
-                }
+                    .padding([.top],10)
+//                }
             }
-        }
+//        }
 //        .background(Color.yellow.opacity(0.1))
 //        .cornerRadius(10)
         .navigationTitle("ChapterOne")

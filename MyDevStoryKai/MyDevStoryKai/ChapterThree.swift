@@ -11,31 +11,36 @@ import SwiftUI
 struct ChapterThree: View {
     var body: some View {
         VStack {
-            Text("Print ChapterIII")
-                .font(.custom("AmericanTypewriter", size: 40).weight(.bold))
+            ForEach(1..<4) {i in
                 
-                .multilineTextAlignment(.center)
-                .foregroundColor(.red)
-            
-                .frame(width: 351, height: 0)
-                .offset(y: 0)
-            
-                .underline()
-                .padding(.bottom, 5)
+                Text("Print ChapterIII")
+                    .font(.custom("AmericanTypewriter", size: 40).weight(.bold))
+                
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.red)
+                
+                    .frame(width: 351, height: 0)
+                    .offset(y: 0)
+                
+                //                .underline()
+                    .padding(.bottom, 30)
+                
+            }
             Text(Constants.ChapterThree)
                 .font(.custom("AmericanTypewriter", size: 20).weight(.bold))
                 
                 .multilineTextAlignment(.leading)
                 .foregroundColor(.red)
-                .offset(y: 20)
+                .offset(y: 10)
                 .padding(.bottom, 100)
             HStack {
-                Image(systemName: "star")
-                    .foregroundColor(.red)
-                Image(systemName: "star")
-                    .foregroundColor(.red)
-                Image(systemName: "star")
-                    .foregroundColor(.red)
+                ForEach(1..<12) {i in
+                    Image(systemName: "star")
+                        .foregroundColor(.red)
+                }
+
+        
+
 
             }
             NavigationLink(destination: ChapterFour()) {
