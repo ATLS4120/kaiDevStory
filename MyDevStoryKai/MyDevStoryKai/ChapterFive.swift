@@ -10,56 +10,66 @@ import SwiftUI
 
 struct ChapterFive: View {
     var body: some View {
-        VStack {
-            Text("Print ChapterV")
-                .font(.custom("AmericanTypewriter", size: 43).weight(.bold))
-                
-                .multilineTextAlignment(.center)
-                .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
+        ZStack {
+            AngularGradient(colors: [.red, .teal, .blue, .black, .indigo, .red], center: .center)
             
-                .frame(width: 351, height: 0)
-                .offset(y: 0)
             
-                .underline()
-                .padding(.bottom, 5)
-            Text(Constants.ChapterFive)
-                .font(.custom("AmericanTypewriter", size: 20).weight(.bold))
+            VStack {
+                Text("Print ChapterV")
+                    .font(.custom("AmericanTypewriter", size: 43).weight(.bold))
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.white)
+                    .frame(width: 351, height: 0)
+                    .offset(y: 0)
+                    .padding(.bottom, 5)
                 
-                .multilineTextAlignment(.leading)
-                .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
-                .offset(y: 20)
-                .padding(.bottom, 100)
-            HStack {
-                Image(systemName: "star")
-                    .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
-                Image(systemName: "star")
-                    .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
-                Image(systemName: "star")
-                    .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
-
+                Text(Constants.ChapterFive)
+                    .font(.custom("AmericanTypewriter", size: 20).weight(.bold))
+                    .multilineTextAlignment(.leading)
+                    .foregroundColor(.white)
+                    .offset(y: 20)
+                    .padding(.bottom, 100)
+                
+                HStack {
+                    Image(systemName: "star")
+                        .foregroundColor(.white)
+                        .font(.system(size: 50))
+                        .padding()
+                    Image(systemName: "moon")
+                        .foregroundColor(.white)
+                        .font(.system(size: 50))
+                        .padding()
+                    Image(systemName: "star")
+                        .foregroundColor(.white)
+                        .font(.system(size: 50))
+                        .padding()
+                }
+                
+                NavigationLink(destination: ChapterSix()) {
+                    Text("Next Chapter")
+                        .frame(width: 150, height: 30)
+                        .font(.custom("AmericanTypewriter", size: 20))
+                        .padding()
+                        .background(.white)
+                        .foregroundColor(.black)
+                        .cornerRadius(10)
+                        .shadow(radius: 20)
+                    
+                }
+                .padding([.top],50)
+                
             }
-            NavigationLink(destination: ChapterSix()) {
-                Text("Next Chapter")
-                    .frame(width: 150, height: 30)
-                    .font(.custom("AmericanTypewriter", size: 20))
-                    .padding()
-                    .background(Color(red: 0.92, green: 0.93, blue: 0.84))
-                    .foregroundColor(.black)
-                    .cornerRadius(10)
-               
-            }
-            .padding([.top],50)
+            //        .background(Color.yellow.opacity(0.1))
+            //        .cornerRadius(10)
+            .navigationTitle("ChapterFive")
+            .padding()
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+//            .background(Color.white)
         }
-//        .background(Color.yellow.opacity(0.1))
-//        .cornerRadius(10)
-        .navigationTitle("ChapterFive")
-        .padding()
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.black)
+            .edgesIgnoringSafeArea(.all)
+        
     }
-    
 }
-
 
 struct ChapterFive_Previews: PreviewProvider {
     static var previews: some View {

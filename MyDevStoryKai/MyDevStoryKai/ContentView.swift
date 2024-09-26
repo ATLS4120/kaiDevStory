@@ -77,7 +77,7 @@ struct ContentView: View {
                 Text("By Kai Franks")
                 //.font(.subheadline)
                     .font(.custom("AmericanTypewriter", size: 30).weight(.semibold))
-                    .multilineTextAlignment(.center)
+    //                .multilineTextAlignment(.center)
                     .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
                 
                     .frame(width: 351, height: 80)
