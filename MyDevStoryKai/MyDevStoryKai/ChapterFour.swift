@@ -36,15 +36,17 @@ struct ChapterFour: View {
                 .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
                 .offset(y: 20)
                 .padding(.bottom, 100)
-            HStack {
-                Image(systemName: "star")
-                    .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
-                Image(systemName: "star")
-                    .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
-                Image(systemName: "star")
-                    .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
-                
-            }
+
+            
+//            HStack {
+//                Image(systemName: "star")
+//                    .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
+//                Image(systemName: "star")
+//                    .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
+//                Image(systemName: "star")
+//                    .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
+//                
+//            }
             NavigationLink(destination: ChapterFive()) {
                 Text("Next Chapter")
                     .frame(width: 150, height: 30)
@@ -53,32 +55,37 @@ struct ChapterFour: View {
                     .background(Color(red: 0.92, green: 0.93, blue: 0.84))
                     .foregroundColor(.black)
                     .cornerRadius(10)
-                
-                
             }
-            Button {
-                print("Image tapped!")
-            } label: {
+            Text("\(counter) pats")
+                .foregroundColor(.white)
+                .font(.custom("AmericanTypewriter", size: 60))
+            
+            Button (action: {
+                counter += 1
+                    
+            }) {
                 Image("catPng")
             }
             
             
-            .padding([.top],50)
+            .padding([.top], 0)
         }
+        
         //        .background(Color.yellow.opacity(0.1))
         //        .cornerRadius(10)
         .navigationTitle("ChapterFour")
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.black)
+//        .background(myBool ? Color.black : Color.white)
     }
     
     
     
-    
-    struct ChapterFour_Previews: PreviewProvider {
-        static var previews: some View {
-            ChapterFour()
-        }
+}
+struct ChapterFour_Previews: PreviewProvider {
+    static var previews: some View {
+        ChapterFour()
     }
 }
+
