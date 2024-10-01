@@ -45,21 +45,21 @@ struct ContentViewModel {
 
 struct ContentView: View {
     let names = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"]
-    let foregroundColor: Color
-    let font: Font
-    let fontTitle: Font
-    
-    init(foregroundColor: Color = Color(red: 0.92, green: 0.93, blue: 0.84), font: Font = .americanTypewriter()) {
-        self.foregroundColor = foregroundColor
-        self.font = font
-        self.fontTitle = .callout
-    }
-    
-    init(model: ContentViewModel) {
-        self.font = model.font
-        self.foregroundColor = model.foregroundColor
-        self.fontTitle = model.fontTitle
-    }
+//    let foregroundColor: Color
+//    let font: Font
+//    let fontTitle: Font
+////    
+//    init(foregroundColor: Color = Color(red: 0.92, green: 0.93, blue: 0.84), font: Font = .americanTypewriter()) {
+//        self.foregroundColor = foregroundColor
+//        self.font = font
+//        self.fontTitle = .callout
+//    }
+//    
+//    init(model: ContentViewModel) {
+//        self.font = model.font
+//        self.foregroundColor = model.foregroundColor
+//        self.fontTitle = model.fontTitle
+//    }
     
     var body: some View {
         NavigationView {
@@ -95,112 +95,64 @@ struct ContentView: View {
                 // Idea:
                 // Add more UI elements here as needed
                 ScrollView([.vertical], showsIndicators: false) {
-                    NavigationLink(destination: FullStoryPage()) {
-                        Text("Full Story")
-                            .frame(width: 300, height: 80)
-                            .font(font)
-                            .padding()
-                            .background(Color(red: 0.92, green: 0.93, blue: 0.84))
-                            .foregroundColor(.black)
-                            .cornerRadius(10)
-                        //                        .offset(y: 150)
-                    }
-                    Text ("or")
-                        .font(.custom("AmericanTypewriter", size: 20).weight(.bold))
-                    
-                        .multilineTextAlignment(.leading)
-                        .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
-                    
+//                    NavigationLink(destination: FullStoryPage()) {
+//                        Text("Full Story")
+//                            .frame(width: 300, height: 80)
+//                            .font(font)
+//                            .padding()
+//                            .background(Color(red: 0.92, green: 0.93, blue: 0.84))
+//                            .foregroundColor(.black)
+//                            .cornerRadius(10)
+//                        //                        .offset(y: 150)
+//                    }
+//                    Text ("or")
+//                        .font(.custom("AmericanTypewriter", size: 20).weight(.bold))
+//                    
+//                        .multilineTextAlignment(.leading)
+//                        .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
+//                    
                     NavigationLink(destination: ChapterOne()) {   
                         chapterView(chapter: names[0])
                     }
                     
                     
                     NavigationLink(destination: ChapterTwo()) {
-                        Text(names[1])
-                            .frame(width: 300, height: 80)
-                            .font(.custom("AmericanTypewriter", size: 30))
-                            .padding()
-                            .background(Color(red: 0.92, green: 0.93, blue: 0.84))
-                            .foregroundColor(.black)
-                            .cornerRadius(10)
+                        chapterView(chapter: names[1])
                         //                        .offset(y: 200)
                     }
                     
                     NavigationLink(destination: ChapterThree()) {
-                        Text(names[2])
-                            .frame(width: 300, height: 80)
-                            .font(.custom("AmericanTypewriter", size: 30))
-                            .padding()
-                            .background(Color(red: 0.92, green: 0.93, blue: 0.84))
-                            .foregroundColor(.black)
-                            .cornerRadius(10)
+                        chapterView(chapter: names[2])
                         //                        .offset(y: 250)
                     }
                     
                     NavigationLink(destination: ChapterFour()) {
-                        Text(names[3])
-                            .frame(width: 300, height: 80)
-                            .font(.custom("AmericanTypewriter", size: 30))
-                            .padding()
-                            .background(Color(red: 0.92, green: 0.93, blue: 0.84))
-                            .foregroundColor(.black)
-                            .cornerRadius(10)
+                        chapterView(chapter: names[3])
                         //                        .offset(y: 300)
                     }
                     
                     NavigationLink(destination: ChapterFive()) {
-                        Text(names[4])
-                            .frame(width: 300, height: 80)
-                            .font(.custom("AmericanTypewriter", size: 30))
-                            .padding()
-                            .background(Color(red: 0.92, green: 0.93, blue: 0.84))
-                            .foregroundColor(.black)
-                            .cornerRadius(10)
+                        chapterView(chapter: names[4])
                         //                        .offset(y: 350)
                     }
                     
                     NavigationLink(destination: ChapterSix()) {
-                        Text(names[5])
-                            .frame(width: 300, height: 80)
-                            .font(.custom("AmericanTypewriter", size: 30))
-                            .padding()
-                            .background(Color(red: 0.92, green: 0.93, blue: 0.84))
-                            .foregroundColor(.black)
-                            .cornerRadius(10)
+                        chapterView(chapter: names[5])
                         //                        .offset(y: 400)
                     }
                     
                     NavigationLink(destination: ChapterSeven()) {
-                        Text(names[6])
-                            .frame(width: 300, height: 80)
-                            .font(.custom("AmericanTypewriter", size: 30))
-                            .padding()
-                            .background(Color(red: 0.92, green: 0.93, blue: 0.84))
-                            .foregroundColor(.black)
-                            .cornerRadius(10)
+                        chapterView(chapter: names[6])
                         //                        .offset(y: 450)
                     }
                     
                     NavigationLink(destination: ChapterEight()) {
-                        Text(names[7])
-                            .frame(width: 300, height: 80)
-                            .font(.custom("AmericanTypewriter", size: 30))
-                            .padding()
-                            .background(Color(red: 0.92, green: 0.93, blue: 0.84))
-                            .foregroundColor(.black)
-                            .cornerRadius(10)
+                        chapterView(chapter: names[7])
                         //                        .offset(y: 500)
                     }
                     
                     NavigationLink(destination: ChapterNine()) {
-                        Text(names[8])
-                            .frame(width: 300, height: 80)
-                            .font(.custom("AmericanTypewriter", size: 30))
-                            .padding()
-                            .background(Color(red: 0.92, green: 0.93, blue: 0.84))
-                            .foregroundColor(.black)
-                            .cornerRadius(10)
+                        chapterView(chapter: names[8])
                         //                        .offset(y: 550)
                     }
                     

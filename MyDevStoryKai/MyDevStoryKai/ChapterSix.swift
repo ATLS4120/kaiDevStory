@@ -55,13 +55,13 @@ struct ChapterSix: View {
                     .foregroundColor(.black)
                     .cornerRadius(10)
             }
-            HStack {
-                ForEach(1..<StarCounter) {i in
-                    Image(systemName: "star")
-                        .foregroundColor(.red)
-                }
+//            HStack {
+//                ForEach(1..<StarCounter) {i in
+//                    Image(systemName: "star")
+//                        .foregroundColor(.red)
+//                }
                 
-            }
+            
                
             
             .padding([.top],50)

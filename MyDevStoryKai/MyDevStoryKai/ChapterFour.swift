@@ -17,7 +17,7 @@ struct ChapterFour: View {
     @State var counter = 0
     
     var body: some View {
-        TabView {
+//        TabView {
             
             VStack {
                 
@@ -25,10 +25,11 @@ struct ChapterFour: View {
                     .font(.custom("AmericanTypewriter", size: 43).weight(.bold))
                 
                     .multilineTextAlignment(.center)
-                    .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
+                    .foregroundColor(Color.green)
                 
                     .frame(width: 351, height: 0)
                     .offset(y: 0)
+                    .padding([.top], 20)
                 
                 //                .underline()
                     .padding(.bottom, 5)
@@ -37,58 +38,13 @@ struct ChapterFour: View {
                         .font(.custom("AmericanTypewriter", size: 20).weight(.bold))
                     
                         .multilineTextAlignment(.leading)
-                        .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
+                        .lineSpacing(10)
+                        .foregroundColor(Color.green)
                         .offset(y: 20)
-                        .padding(.bottom, 80)
+                        .padding([.top], 10)
                 }
-                
-                //            HStack {
-                //                Image(systemName: "star")
-                //                    .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
-                //                Image(systemName: "star")
-                //                    .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
-                //                Image(systemName: "star")
-                //                    .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
-                //                
-                //            }
-                //            NavigationLink(destination: ChapterFive()) {
-                //                Text("Next Chapter")
-                //                    .frame(width: 150, height: 30)
-                //                    .font(.custom("AmericanTypewriter", size: 20))
-                //                    .padding()
-                //                    .background(Color(red: 0.92, green: 0.93, blue: 0.84))
-                //                    .foregroundColor(.black)
-                //                    .cornerRadius(10)
-                //            }
-                
-                //            Text("\(counter) pats")
-                //                .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
-                //                .font(.custom("AmericanTypewriter", size: 60))
-                //            
-                //            Button (action: {
-                //                counter += 1
-                //                    
-                //            }) {
-                //                Image("catPng")
-                //            }
-                //            
-                //            Button (action: {
-                //                counter = 0
-                //            }) {
-                //                Text("Reset")
-                //            }
-                //            
-                //            
-                //            .padding([.top], 0)
-                //            NavigationLink(destination: ChapterFive()) {
-                //                Text("Next Chapter")
-                //                    .frame(width: 150, height: 30)
-                //                    .font(.custom("AmericanTypewriter", size: 20))
-                //                    .padding()
-                //                    .background(Color(red: 0.92, green: 0.93, blue: 0.84))
-                //                    .foregroundColor(.black)
-                //                    .cornerRadius(10)
-                //            }
+                Image(systemName: "arrow")
+                    .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
             }
             
             
@@ -103,20 +59,9 @@ struct ChapterFour: View {
     }
     
     
-}
+
 #Preview {
         ChapterFour()
 }
 
-//ChapterOne()
-//    .tabItem {
-//        Text("I")
-//        Image(systemName: "star")
-//            //                chapterOne()
-//        }
-//ChapterTwo()
-//    .tabItem {
-//        Text("II")
-//        Image(systemName: "star")
-//        //                chapterOne()
-//    }
+
