@@ -42,7 +42,7 @@ struct ChapterSix: View {
                     .cornerRadius(10)
             }
             Button {
-                print("Stars")
+                StarCounter += 1
                 //This is where I to add the star maker button system!!!!!
 //                Image(systemName: "star")
 //                    .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
@@ -55,15 +55,13 @@ struct ChapterSix: View {
                     .foregroundColor(.black)
                     .cornerRadius(10)
             }
-                HStack {
+            HStack {
+                ForEach(1..<StarCounter) {i in
                     Image(systemName: "star")
-                        .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
-                    Image(systemName: "star")
-                        .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
-                    Image(systemName: "star")
-                        .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
-
+                        .foregroundColor(.red)
                 }
+                
+            }
                
             
             .padding([.top],50)
@@ -79,8 +77,6 @@ struct ChapterSix: View {
 }
 
 
-struct ChapterSix_Previews: PreviewProvider {
-    static var previews: some View {
+#Preview {
         ChapterSix()
-    }
 }

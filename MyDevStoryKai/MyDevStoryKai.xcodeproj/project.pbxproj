@@ -24,6 +24,7 @@
 		7DD7BEBC2CA1179C00C9DA71 /* ChapterSeven.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BEBB2CA1179C00C9DA71 /* ChapterSeven.swift */; };
 		7DD7BEBE2CA117AB00C9DA71 /* ChapterEight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BEBD2CA117AB00C9DA71 /* ChapterEight.swift */; };
 		7DD7BEC02CA117BA00C9DA71 /* ChapterNine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BEBF2CA117BA00C9DA71 /* ChapterNine.swift */; };
+		7DDDE9C32CAB855500B8F16D /* CatClicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDDE9C22CAB855400B8F16D /* CatClicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		7DD7BEBB2CA1179C00C9DA71 /* ChapterSeven.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterSeven.swift; sourceTree = "<group>"; };
 		7DD7BEBD2CA117AB00C9DA71 /* ChapterEight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterEight.swift; sourceTree = "<group>"; };
 		7DD7BEBF2CA117BA00C9DA71 /* ChapterNine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterNine.swift; sourceTree = "<group>"; };
+		7DDDE9C22CAB855400B8F16D /* CatClicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatClicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				7DD7BEB12CA1175700C9DA71 /* ChapterTwo.swift */,
 				7DD7BEB32CA1176600C9DA71 /* ChapterThree.swift */,
 				7DD7BEB52CA1177100C9DA71 /* ChapterFour.swift */,
+				7DDDE9C22CAB855400B8F16D /* CatClicker.swift */,
 				7DD7BEB72CA1177D00C9DA71 /* ChapterFive.swift */,
 				7DD7BEB92CA1178C00C9DA71 /* ChapterSix.swift */,
 				7DD7BEBB2CA1179C00C9DA71 /* ChapterSeven.swift */,
@@ -176,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DDDE9C32CAB855500B8F16D /* CatClicker.swift in Sources */,
 				7DD7BEBC2CA1179C00C9DA71 /* ChapterSeven.swift in Sources */,
 				7DD7BEB22CA1175700C9DA71 /* ChapterTwo.swift in Sources */,
 				7DB7056E2CA235420090E1CD /* Settings.swift in Sources */,

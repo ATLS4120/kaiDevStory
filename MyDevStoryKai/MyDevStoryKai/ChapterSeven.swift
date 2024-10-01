@@ -61,9 +61,7 @@ struct ChapterSeven: View {
 }
 
 
-struct ChapterSeven_Previews: PreviewProvider {
-    static var previews: some View {
+#Preview {
         ChapterSeven()
-    }
 }
 

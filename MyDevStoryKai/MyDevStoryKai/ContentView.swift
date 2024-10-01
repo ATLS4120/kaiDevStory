@@ -111,15 +111,8 @@ struct ContentView: View {
                         .multilineTextAlignment(.leading)
                         .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
                     
-                    NavigationLink(destination: ChapterOne()) {
-                        Text(names[0])
-                            .frame(width: 300, height: 80)
-                            .font(.custom("AmericanTypewriter", size: 30))
-                            .padding()
-                            .background(Color(red: 0.92, green: 0.93, blue: 0.84))
-                            .foregroundColor(.black)
-                            .cornerRadius(10)
-                        //                        .offset(y: 150)
+                    NavigationLink(destination: ChapterOne()) {   
+                        chapterView(chapter: names[0])
                     }
                     
                     
