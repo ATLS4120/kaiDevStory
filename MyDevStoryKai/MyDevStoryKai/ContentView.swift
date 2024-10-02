@@ -167,32 +167,7 @@ struct ContentView: View {
                         //                        .offset(y: 550)
                     }
                     
-//                    NavigationLink(destination: ContentView()) {
-//                        Text(names[9])
-//                            .frame(width: 300, height: 80)
-//                            .font(.custom("AmericanTypewriter", size: 30))
-//                            .padding()
-//                            .background(Color(red: 0.92, green: 0.93, blue: 0.84))
-//                            .foregroundColor(.black)
-//                            .cornerRadius(10)
-//                        //                        .offset(y: 600)
-//                    }
-                    
-                    //
-                    //
-                    
-                    //            .contextMenu {
-                    //                Button("I", action: pageI)
-                    //                Button("II", action: pageII)
-                    //                Button("III", action: pageIII)
-                    //                Button("IV", action: pageIV)
-                    //                Button("V", action: pageV)
-                    //                Button("VI", action: pageVI)
-                    //                Button("VII", action: pageVII)
-                    //                Button("VIII", action: pageVIII)
-                    //                Button("IX", action: pageIX)
-                    //                Button("X", action: pageX)
-                    //            }
+
                 }
                 
                 

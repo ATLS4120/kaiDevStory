@@ -36,7 +36,7 @@ struct ChapterThree: View {
                 }
 
             }
-            NavigationLink(destination: ChapterFour()) {
+            NavigationLink(destination: ChapterFourCombined()) {
                 
                 Text("Next Chapter")
                     .frame(width: 100, height: 100)

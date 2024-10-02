@@ -27,30 +27,40 @@ struct CatClicker: View {
                 
                 Button (action: {
                     counter += 1}) {
-                    Image("catPng")
-                }
+                        Image("catPng")
+                    }
                 
                 Button (action: {
                     counter = 0}) {
-                    Text("Reset")
-                            .padding([.top], 30)
+                        Text("Reset")
+                            .padding([.top], 10)
                             .foregroundColor(Color.red)
                             .font(.custom("AmericanTypewriter", size: 20))
+                    }
+                NavigationLink(destination: ChapterFive()) {
+                    
+                    Text("Next Chapter")
+                        .frame(width: 100, height: 100)
+                        .font(.custom("AmericanTypewriter", size: 20))
+                        .padding()
+                        .background(Circle().fill(Color.green.opacity(Double(counter/10))))
+                        .foregroundColor(.black.opacity(0.7))
+                        .cornerRadius(10)
+                    
                 }
-                
+                //.background(Color.black)
+                //            .edgesIgnoringSafeArea(.all)
             }
-                        //.background(Color.black)
+            
+            //        .background(Color.black)
             //            .edgesIgnoringSafeArea(.all)
+            
         }
-//        .background(Color.black)
-        //            .edgesIgnoringSafeArea(.all)
-        
+        //        .edgesIgnoringSafeArea(.all)
+        //        .background(Color.black)
     }
-//        .edgesIgnoringSafeArea(.all)
-//        .background(Color.black)
-    }
-//    .edgesIgnoringSafeArea(.all)
-        
+    //    .edgesIgnoringSafeArea(.all)
+}
 
         #Preview {
             CatClicker()

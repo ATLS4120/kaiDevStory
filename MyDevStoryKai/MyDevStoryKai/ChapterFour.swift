@@ -43,8 +43,20 @@ struct ChapterFour: View {
                         .offset(y: 20)
                         .padding([.top], 10)
                 }
-                Image(systemName: "arrow")
-                    .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
+                Text("Swipe Right")
+                    .font(.custom("AmericanTypewriter", size: 20).weight(.bold))
+                
+                    .multilineTextAlignment(.leading)
+                    .lineSpacing(10)
+                    .foregroundColor(Color.green)
+                    .offset(y: 20)
+                    .padding([.top], 10)
+            
+                    
+                Image(systemName: "arrowshape.right.fill")
+                    .foregroundColor(Color.green)
+                    .font(.system(size: 100))
+                    .padding()
             }
             
             
