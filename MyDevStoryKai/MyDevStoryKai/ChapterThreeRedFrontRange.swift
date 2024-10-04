@@ -8,11 +8,10 @@
 //import Foundation
 import SwiftUI
 
-struct ChapterThree: View {
+struct ChapterThreeRedFrontRange: View {
     var body: some View {
         VStack {
             ForEach(1..<4) {i in
-                
                 Text("Print ChapterIII")
                     .font(.custom("AmericanTypewriter", size: 40).weight(.bold))
                     .multilineTextAlignment(.center)
@@ -20,24 +19,23 @@ struct ChapterThree: View {
                     .frame(width: 351, height: 0)
                     .offset(y: 0)
                     .padding(.bottom, 30)
-                
             }
-            Text(Constants.ChapterThree)
+            
+            Text(Constants.ChapterThreeRedFrontRange)
                 .font(.custom("AmericanTypewriter", size: 20).weight(.bold))
-                
                 .multilineTextAlignment(.leading)
                 .foregroundColor(.red)
                 .offset(y: 10)
                 .padding(.bottom, 100)
+            
             HStack {
                 ForEach(1..<12) {i in
                     Image(systemName: "star")
                         .foregroundColor(.red)
                 }
-
             }
+            
             NavigationLink(destination: ChapterFourCombined()) {
-                
                 Text("Next Chapter")
                     .frame(width: 100, height: 100)
                     .font(.custom("AmericanTypewriter", size: 20))
@@ -45,21 +43,16 @@ struct ChapterThree: View {
                     .background(Circle().fill(Color.red))
                     .foregroundColor(.black)
                     .cornerRadius(10)
-               
             }
             .padding([.top],50)
         }
-//        .background(Color.yellow.opacity(0.1))
-//        .cornerRadius(10)
-        .navigationTitle("ChapterThree")
+        .navigationTitle("ChapterThreeRedFrontRange")
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.black)
     }
-    
 }
 
-
 #Preview {
-        ChapterThree()
+        ChapterThreeRedFrontRange()
 }

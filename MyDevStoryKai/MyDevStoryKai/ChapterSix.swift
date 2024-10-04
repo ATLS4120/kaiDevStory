@@ -15,18 +15,15 @@ struct ChapterSix: View {
         VStack {
             Text("Print ChapterVI")
                 .font(.custom("AmericanTypewriter", size: 43).weight(.bold))
-                
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
-            
                 .frame(width: 351, height: 0)
                 .offset(y: 0)
-            
                 .underline()
                 .padding(.bottom, 5)
+            
             Text(Constants.ChapterSix)
                 .font(.custom("AmericanTypewriter", size: 20).weight(.bold))
-                
                 .multilineTextAlignment(.leading)
                 .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
                 .offset(y: 20)
@@ -41,6 +38,7 @@ struct ChapterSix: View {
                     .foregroundColor(.black)
                     .cornerRadius(10)
             }
+            
             Button {
                 StarCounter += 1
                 //This is where I to add the star maker button system!!!!!
@@ -55,19 +53,8 @@ struct ChapterSix: View {
                     .foregroundColor(.black)
                     .cornerRadius(10)
             }
-//            HStack {
-//                ForEach(1..<StarCounter) {i in
-//                    Image(systemName: "star")
-//                        .foregroundColor(.red)
-//                }
-                
-            
-               
-            
             .padding([.top],50)
         }
-//        .background(Color.yellow.opacity(0.1))
-//        .cornerRadius(10)
         .navigationTitle("ChapterSix")
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)

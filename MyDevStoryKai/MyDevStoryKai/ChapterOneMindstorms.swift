@@ -8,28 +8,25 @@
 //import Foundation
 import SwiftUI
 
-struct ChapterOne: View {
+struct ChapterOneMindstorms: View {
     var body: some View {
-        
         VStack {
             Text("Print ChapterI")
                 .font(.custom("AmericanTypewriter", size: 43).weight(.bold))
-                
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
-            
                 .frame(width: 351, height: 0)
                 .offset(y: 0)
-            
                 .underline()
                 .padding(.bottom, 5)
-            Text(Constants.ChapterOne)
+            
+            Text(Constants.ChapterOneMindstorms)
                 .font(.custom("AmericanTypewriter", size: 20).weight(.bold))
-                
                 .multilineTextAlignment(.leading)
                 .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
                 .offset(y: 20)
                 .padding(.bottom, 20)
+            
             Image("LegoMindstorms")
                     .resizable()
                     .scaledToFit()
@@ -37,6 +34,7 @@ struct ChapterOne: View {
                     .cornerRadius(12)
                     .shadow(radius: 5)
                     .padding([.top, .bottom],20)
+            
             HStack {
                 Image(systemName: "star")
                     .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
@@ -46,18 +44,8 @@ struct ChapterOne: View {
                     .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
 
             }
-//            ScrollView([.vertical], showsIndicators: false) {
                 VStack {
-                    //                Button(action: {destination: ChapterTwo()}, label: {
-                    //                    Text("Next Chapter")
-                    //                        .frame(width: 150, height: 30)
-                    //                        .font(.custom("AmericanTypewriter", size: 20))
-                    //                        .padding()
-                    //                        .background(Color(red: 0.92, green: 0.93, blue: 0.84))
-                    //                        .foregroundColor(.black)
-                    //                        .cornerRadius(10)
-                    //                })
-                    NavigationLink(destination: ChapterTwo()) {
+                    NavigationLink(destination: ChapterTwoHighSchool()) {
                         Text("Next Chapter")
                             .frame(width: 150, height: 30)
                             .font(.custom("AmericanTypewriter", size: 20))
@@ -74,24 +62,11 @@ struct ChapterOne: View {
                             .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
                         Image(systemName: "star")
                             .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
-
                     }
-//                    Image("LegoMindstorms")
-//                            .resizable()
-//                            .scaledToFit()
-//                            .frame(height: 200)
-//                            .cornerRadius(12)
-//                            .shadow(radius: 5)
-//                            .padding([.top],20)
-                        
-                    }
-                    .padding([.top],10)
-//                }
+                }
+                .padding([.top],10)
             }
-//        }
-//        .background(Color.yellow.opacity(0.1))
-//        .cornerRadius(10)
-        .navigationTitle("ChapterOne")
+        .navigationTitle("ChapterOneMindstorms")
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.black)
@@ -99,8 +74,7 @@ struct ChapterOne: View {
     
 }
 
-
 #Preview {
-        ChapterOne()
+        ChapterOneMindstorms()
 }
 

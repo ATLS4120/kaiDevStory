@@ -37,7 +37,7 @@ struct FullStoryPage: View {
 //                    Image(systemName: "star")
 //                        //                chapterOne()
 //                    }
-            ChapterOne()
+            ChapterOneMindstorms()
                 .tabItem {
                     Text("I")
                     Image(systemName: "star")

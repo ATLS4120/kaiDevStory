@@ -46,22 +46,15 @@ struct CatClicker: View {
                         .background(Circle().fill(Color.green.opacity(Double(counter/10))))
                         .foregroundColor(.black.opacity(0.7))
                         .cornerRadius(10)
-                    
                 }
-                //.background(Color.black)
-                //            .edgesIgnoringSafeArea(.all)
+  
             }
             
-            //        .background(Color.black)
-            //            .edgesIgnoringSafeArea(.all)
-            
         }
-        //        .edgesIgnoringSafeArea(.all)
-        //        .background(Color.black)
-    }
-    //    .edgesIgnoringSafeArea(.all)
-}
 
-        #Preview {
-            CatClicker()
-        }
+    }
+  
+}
+    #Preview {
+        CatClicker()
+    }

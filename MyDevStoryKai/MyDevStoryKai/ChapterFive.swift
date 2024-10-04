@@ -12,8 +12,6 @@ struct ChapterFive: View {
     var body: some View {
         ZStack {
             AngularGradient(colors: [.red, .teal, .blue, .black, .indigo, .red], center: .center)
-            
-            
             VStack {
                 Text("Print ChapterV")
                     .font(.custom("AmericanTypewriter", size: 43).weight(.bold))

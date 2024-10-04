@@ -8,18 +8,18 @@
 //import Foundation
 import SwiftUI
 
-struct ChapterTwo: View {
+struct ChapterTwoHighSchool: View {
     @State var currentColor: ColorCycle = .blue
 
     enum ColorCycle {
-        case blue, red, green, black, mint
+        case blue, red, green, purple, mint
 
         var nextColor: ColorCycle {
             switch self {
                 case .blue: .red
                 case .red: .green
-                case .green: .black
-                case .black: .mint
+                case .green: .purple
+                case .purple: .mint
                 case .mint: .blue
             }
         }
@@ -29,7 +29,7 @@ struct ChapterTwo: View {
                 case .blue: .blue
                 case .red: .red
                 case .green: .green
-                case .black: .black
+                case .purple: .purple
                 case .mint: .mint
             }
         }
@@ -52,22 +52,13 @@ struct ChapterTwo: View {
 //                    .frame(width: 351, height: 0)
                     .padding(.bottom, 10)
 
-                Text(Constants.ChapterTwo)
+                Text(Constants.ChapterTwoHighSchool)
                     .font(.system(size: 20, weight: .medium))
                     .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                     .foregroundColor(.white)
 //                    .frame(width: 351, height: 200)
                     .padding(.bottom, 5)
 
-                //                HStack {
-                //                    Image(systemName: "star")
-                //                        .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
-                //                    Image(systemName: "star")
-                //                        .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
-                //                    Image(systemName: "star")
-                //                        .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
-                //
-                //                }
                 VStack {
                     Button {
 //                        currentColor.changer()
@@ -92,7 +83,7 @@ struct ChapterTwo: View {
                         .frame(width: 150, height: 30)
                         .font(.system(size: 20, weight: .heavy))
 
-                    NavigationLink(destination: ChapterThree()) {
+                    NavigationLink(destination: ChapterThreeRedFrontRange()) {
                         Text("Next Chapter")
                             .frame(width: 150, height: 30)
                             .font(.system(size: 20, weight: .medium))
@@ -100,30 +91,15 @@ struct ChapterTwo: View {
                             .background(currentColor.color)
                             .foregroundColor(.black)
                             .cornerRadius(30)
-
                     }
                 }
                 .padding([.top],90)
-
-//                Spacer()
             }
-//            .overlay {
-//                Rectangle().strokeBorder(lineWidth: 2).foregroundStyle(.red)
-//            }
-            //        .background(Color.yellow.opacity(0.1))
-            //        .cornerRadius(10)
-            .navigationTitle("chapterTwo")
+            .navigationTitle("ChapterTwoHighSchool")
             .padding()
-//            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            //        ZStack {
-            //            LinearGradient(gradient: Gradient(colors: [.white, .blue, .black]), startPoint: .top, endPoint: .bottom)
-            //        }
+            }
         }
-//        .frame(maxHeight: .infinity, alignment: .top)
     }
-}
-
-
 #Preview {
-    ChapterTwo()
+    ChapterTwoHighSchool()
 }
