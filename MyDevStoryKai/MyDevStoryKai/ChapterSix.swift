@@ -29,7 +29,7 @@ struct ChapterSix: View {
                 .offset(y: 20)
                 .padding(.bottom, 100)
           
-            NavigationLink(destination: ChapterSeven()) {
+            NavigationLink(destination: ChapterSevenColorBlockIntern()) {
                 Text("Next Chapter")
                     .frame(width: 150, height: 30)
                     .font(.custom("AmericanTypewriter", size: 20))
