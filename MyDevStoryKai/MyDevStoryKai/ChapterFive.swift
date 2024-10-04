@@ -43,7 +43,7 @@ struct ChapterFive: View {
                         .padding()
                 }
                 
-                NavigationLink(destination: ChapterSix()) {
+                NavigationLink(destination: ChapterSixStarsUI()) {
                     Text("Next Chapter")
                         .frame(width: 150, height: 30)
                         .font(.custom("AmericanTypewriter", size: 20))

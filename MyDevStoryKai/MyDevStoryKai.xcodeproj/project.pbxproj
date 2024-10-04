@@ -20,7 +20,7 @@
 		7DD7BEB42CA1176600C9DA71 /* ChapterThreeRedFrontRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BEB32CA1176600C9DA71 /* ChapterThreeRedFrontRange.swift */; };
 		7DD7BEB62CA1177100C9DA71 /* ChapterFourGreenHalf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BEB52CA1177100C9DA71 /* ChapterFourGreenHalf.swift */; };
 		7DD7BEB82CA1177D00C9DA71 /* ChapterFive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BEB72CA1177D00C9DA71 /* ChapterFive.swift */; };
-		7DD7BEBA2CA1178C00C9DA71 /* ChapterSix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BEB92CA1178C00C9DA71 /* ChapterSix.swift */; };
+		7DD7BEBA2CA1178C00C9DA71 /* ChapterSixStarsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BEB92CA1178C00C9DA71 /* ChapterSixStarsUI.swift */; };
 		7DD7BEBC2CA1179C00C9DA71 /* ChapterSevenColorBlockIntern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BEBB2CA1179C00C9DA71 /* ChapterSevenColorBlockIntern.swift */; };
 		7DD7BEBE2CA117AB00C9DA71 /* ChapterEightArduinoBeach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BEBD2CA117AB00C9DA71 /* ChapterEightArduinoBeach.swift */; };
 		7DD7BEC02CA117BA00C9DA71 /* ChapterNine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BEBF2CA117BA00C9DA71 /* ChapterNine.swift */; };
@@ -42,7 +42,7 @@
 		7DD7BEB32CA1176600C9DA71 /* ChapterThreeRedFrontRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterThreeRedFrontRange.swift; sourceTree = "<group>"; };
 		7DD7BEB52CA1177100C9DA71 /* ChapterFourGreenHalf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterFourGreenHalf.swift; sourceTree = "<group>"; };
 		7DD7BEB72CA1177D00C9DA71 /* ChapterFive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterFive.swift; sourceTree = "<group>"; };
-		7DD7BEB92CA1178C00C9DA71 /* ChapterSix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterSix.swift; sourceTree = "<group>"; };
+		7DD7BEB92CA1178C00C9DA71 /* ChapterSixStarsUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterSixStarsUI.swift; sourceTree = "<group>"; };
 		7DD7BEBB2CA1179C00C9DA71 /* ChapterSevenColorBlockIntern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterSevenColorBlockIntern.swift; sourceTree = "<group>"; };
 		7DD7BEBD2CA117AB00C9DA71 /* ChapterEightArduinoBeach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterEightArduinoBeach.swift; sourceTree = "<group>"; };
 		7DD7BEBF2CA117BA00C9DA71 /* ChapterNine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterNine.swift; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 				7DDDE9C22CAB855400B8F16D /* CatClicker.swift */,
 				7D1FF85A2CAC91A000E0F986 /* ChapterFourCombined.swift */,
 				7DD7BEB72CA1177D00C9DA71 /* ChapterFive.swift */,
-				7DD7BEB92CA1178C00C9DA71 /* ChapterSix.swift */,
+				7DD7BEB92CA1178C00C9DA71 /* ChapterSixStarsUI.swift */,
 				7DD7BEBB2CA1179C00C9DA71 /* ChapterSevenColorBlockIntern.swift */,
 				7DD7BEBD2CA117AB00C9DA71 /* ChapterEightArduinoBeach.swift */,
 				7DD7BEBF2CA117BA00C9DA71 /* ChapterNine.swift */,
@@ -193,7 +193,7 @@
 				7DD7BEB02CA1174400C9DA71 /* ChapterOneMindstorms.swift in Sources */,
 				7DD7BEC02CA117BA00C9DA71 /* ChapterNine.swift in Sources */,
 				7D1FF85B2CAC91A000E0F986 /* ChapterFourCombined.swift in Sources */,
-				7DD7BEBA2CA1178C00C9DA71 /* ChapterSix.swift in Sources */,
+				7DD7BEBA2CA1178C00C9DA71 /* ChapterSixStarsUI.swift in Sources */,
 				7DD7BEA22CA116A200C9DA71 /* MyDevStoryKaiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
