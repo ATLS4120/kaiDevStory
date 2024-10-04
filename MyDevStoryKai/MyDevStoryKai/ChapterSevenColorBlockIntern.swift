@@ -51,7 +51,7 @@ struct ChapterSevenColorBlockIntern: View {
 //                                .shadow(color: Color.blue, radius: 2)
                         }
 
-                        NavigationLink(destination: ChapterEight()) {
+                        NavigationLink(destination: ChapterEightArduinoBeach()) {
                             Text("Next Chapter")
                                 .frame(width: 85, height: 185)
                                 .font(.system(size: 20, weight: .light))

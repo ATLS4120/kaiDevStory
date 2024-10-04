@@ -49,7 +49,7 @@ struct ChapterNine: View {
                             .background(Color(red: 0.92, green: 0.93, blue: 0.84))
                             .foregroundColor(.black)
                             .cornerRadius(10)
-                            .navigationBarBackButtonHidden(true)
+//                            .navigationBarBackButtonHidden(true)
                     }
                     .padding([.top],50)
                 }

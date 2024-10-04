@@ -41,6 +41,11 @@ struct ChapterSix: View {
             
             Button {
                 StarCounter += 1
+                
+//                Image(systemName: "star")
+//                    .foregroundColor(.white)
+//                    .font(.system(size: 50))
+                    
                 //This is where I to add the star maker button system!!!!!
 //                Image(systemName: "star")
 //                    .foregroundColor(Color(red: 0.92, green: 0.93, blue: 0.84))
@@ -67,3 +72,7 @@ struct ChapterSix: View {
 #Preview {
         ChapterSix()
 }
+
+//for _ in 1...3 {
+//    print(Double.random(in: 10.0 ..< 20.0))
+//}

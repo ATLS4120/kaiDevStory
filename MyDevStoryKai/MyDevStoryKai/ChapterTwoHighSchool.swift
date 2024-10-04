@@ -95,7 +95,7 @@ struct ChapterTwoHighSchool: View {
                 }
                 .padding([.top],90)
             }
-            .navigationTitle("ChapterTwoHighSchool")
+//            .navigationTitle("ChapterTwoHighSchool")
             .padding()
             }
         }
